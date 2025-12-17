@@ -82,7 +82,13 @@ function getEvens(numbers) {
  * @returns {number[]} the odd numbers in the array
  */
 function getOdds(numbers) {
-  // TODO
+  const odds = [];
+  for (const n of numbers) {
+    if (n % 2 === 1) {
+      odds.push(n);
+    }
+  }
+  return odds;
 }
 
 // === READ BUT DO NOT EDIT THE CODE BELOW ===
