@@ -32,7 +32,13 @@ function getMean(numbers) {
  * @returns {number} the smallest of the numbers
  */
 function getMin(numbers) {
-  // TODO
+  min = 0;
+  for (const n of numbers) {
+    if (n < min) {
+      min = n;
+    }
+  }
+  return min;
 }
 
 /**
