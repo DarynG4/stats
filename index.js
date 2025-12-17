@@ -46,7 +46,13 @@ function getMin(numbers) {
  * @returns {number} the largest of the numbers
  */
 function getMax(numbers) {
-  // TODO
+  max = 0;
+  for (const n of numbers) {
+    if (n > max) {
+      max = n;
+    }
+  }
+  return max;
 }
 
 /**
