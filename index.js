@@ -11,7 +11,11 @@ function getLength(numbers) {
  * @returns {number} the sum of the numbers
  */
 function getSum(numbers) {
-  // TODO
+  let sum = 0;
+  for (const n of numbers) {
+    sum += n;
+  }
+  return sum;
 }
 
 /**
